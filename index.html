@@ -187,6 +187,47 @@
             display: flex;
             justify-content: center;
         }
+        @media only screen and (max-width: 768px) {
+    .herosection {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .herosection img {
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+    .leftsection {
+        padding-left: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+/* Even smaller screens */
+@media only screen and (max-width: 480px) {
+    .name {
+        font-size: 1.2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .leftsection {
+        font-size: 1.5rem;
+    }
+    .specialities .first-three {
+        flex-direction: column;
+        align-items: center;
+    }
+    .specialities .first-three img {
+        margin-bottom: 20px;
+    }
+}
     </style>
 </head>
 
